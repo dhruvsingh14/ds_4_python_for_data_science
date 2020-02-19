@@ -145,26 +145,167 @@ standard_deviation
 
 # creating a numpy array
 b = np.array([-1, 2, 3, 4, 5])
-print(b)
+b
 
 # getting the biggest value in the numpy array
+max_b = b.max()
+max_b
+
+# conversely, getting the lowest value
+min_b = b.min()
+min_b
 
 
+##########################
+# numpy array operations #
+##########################
+
+##################
+# array addition #
+##################
+u = np.array([1,0])
+u
+
+v = np.array([0,1])
+v
+
+# numpy array addition
+z = u + v
+z
+
+# plot numpy arrays
+Plotvec1(u, z, v)
+#plt.show()
+
+#########################
+# array multiiplication #
+#########################
+y = np.array([1,2])
+y
+
+# numpy array multiiplication
+z = 2 * y
+z
+
+###############################
+# product of two numpy arrays #
+###############################
+u = np.array([1,2])
+u
+
+v = np.array([3,2])
+v
+
+# calculate the product of two numpy arrays
+z = u * v
+z
+
+###############
+# dot product #
+###############
+np.dot(u,v)
+
+u = np.array([1,2,3,-1])
+u
+
+##################################
+# adding a constant to the array #
+##################################
+u + 1
+
+##########################
+# mathematical functions #
+##########################
+# printing out value of pi
+np.pi
+
+# translating array elements values listed in pi to radians
+x = np.array([0,np.pi/2,np.pi])
+
+# calculates the sine of each element
+y = np.sin(x)
+y
+
+############
+# linspace #
+############
+# declaring an equally spaced array, specifying cutpoints, and n
+np.linspace(-2,2,num=5)
+np.linspace(-2,2,num=9)
+
+# using pi instead for cutpoints
+x = np.linspace(0, 2*np.pi, num=100)
+
+# calculate the sine of x list
+y = np.sin(x)
+
+# plot the result
+#plt.plot(x,y)
+#plt.show()
+# spliced from line due to sinusoidal nature
+
+##########################
+# quiz on 1d numpy array #
+##########################
+
+# declaring arrays
+u = np.array([1,0])
+v = np.array([0,1])
+
+# calculating the difference
+u-v
+
+# declaring and multiplying by a scalar
+z = np.array([2,4])
+z*-2
+
+# casting lists to arrays
+x = np.array([1,2,3,4,5])
+y = np.array([1,0,1,0,1])
+x*y
+
+# converting lists to numpy arrays
+a = np.array([-1,1])
+b = np.array([1,1])
+# plotting arrays as vectors
+#Plotvec2(a,b)
+#plt.show()
+# dot product
+np.dot(a,b)
+
+# doing the same for the following lists
+a = np.array([1,0])
+b = np.array([0,1])
+#Plotvec2(a,b)
+#plt.show()
+np.dot(a,b)
+
+# doing the same for the following lists
+a = np.array([1,1])
+b = np.array([0,1])
+#Plotvec2(a,b)
+#plt.show()
+np.dot(a,b)
+
+# perpendicular vectors above give a 0 dot product
 
 
+########
+# quiz #
+########
+#q1
+a = np.array([0,1,0,1,0])
+b = np.array([1,0,1,0,1])
+print(a*b)
 
+# q2
+a = np.array([-1,1])
+b = np.array([1,1])
+print(np.dot(a,b))
 
-
-
-
-
-
-
-
-
-
-
-
+# q3
+a = np.array([1,1,1,1,1])
+print(a + 10)
 
 
 
